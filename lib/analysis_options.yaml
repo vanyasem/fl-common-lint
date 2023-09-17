@@ -151,15 +151,13 @@ linter:
     # https://dart.dev/tools/linter-rules/no_logic_in_create_state
     - no_logic_in_create_state
 
-    ### Currently not supported
     # Don’t assign a variable to itself.
     # https://dart.dev/tools/linter-rules/no_self_assignments
-    #- no_self_assignments
+    - no_self_assignments
 
-    ### Currently not supported
     # Don’t use wildcard parameters or variables.
     # https://dart.dev/tools/linter-rules/no_wildcard_variable_uses
-    #- no_wildcard_variable_uses
+    - no_wildcard_variable_uses
 
     # Prefer relative imports for files in lib/.
     # https://dart.dev/tools/linter-rules/prefer_relative_imports
@@ -525,7 +523,7 @@ linter:
 
     # Avoid defining a one-member abstract class when a simple function will do.
     # https://dart.dev/tools/linter-rules/one_member_abstracts
-    - one_member_abstracts
+    #- one_member_abstracts
 
     # Only throw instances of classes extending either Exception or Error.
     # https://dart.dev/tools/linter-rules/only_throw_errors
@@ -841,7 +839,7 @@ linter:
 
     # Unnecessary parentheses can be removed.
     # https://dart.dev/tools/linter-rules/unnecessary_parenthesis
-    - unnecessary_parenthesis
+    #- unnecessary_parenthesis
 
     # Unnecessary raw string.
     # https://dart.dev/tools/linter-rules/unnecessary_raw_strings
@@ -865,7 +863,7 @@ linter:
 
     # Unreachable top-level members in executable libraries.
     # https://dart.dev/tools/linter-rules/unreachable_from_main
-    - unreachable_from_main
+    #- unreachable_from_main
 
     # Use ColoredBox.
     # https://dart.dev/tools/linter-rules/use_colored_box
@@ -957,6 +955,6 @@ linter:
     # https://dart.dev/tools/linter-rules/sort_pub_dependencies
     #- sort_pub_dependencies
 
-    ### Disabled rules: 33
-    ### Enabled rules: 194 (85.5% of total)
+    ### Disabled rules: 34
+    ### Enabled rules: 193 (85.0% of total)
     ### Total rules: 227
