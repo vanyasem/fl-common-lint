@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.0
+
+- Enabled [annotate_redeclares](https://dart.dev/tools/linter-rules/annotate_redeclares):
+  _Annotate redeclared members._
+
+Linter rules up to date as of **23.11.2023**
+
+Dart SDK: **3.2.0**
+
 ## 1.1.0
 
 - Enabled [no_self_assignments](https://dart.dev/tools/linter-rules/no_self_assignments):
