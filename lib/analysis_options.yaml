@@ -33,11 +33,11 @@ linter:
     # https://dart.dev/tools/linter-rules/always_use_package_imports
     - always_use_package_imports
 
-    # Avoid method calls or property accesses on a “dynamic” target.
+    # Avoid method calls or property accesses on a "dynamic" target.
     # https://dart.dev/tools/linter-rules/avoid_dynamic_calls
     - avoid_dynamic_calls
 
-    # Avoid empty else statements.
+    # Avoid empty statements in else clauses.
     # https://dart.dev/tools/linter-rules/avoid_empty_else
     - avoid_empty_else
 
@@ -49,12 +49,12 @@ linter:
     # https://dart.dev/tools/linter-rules/avoid_relative_lib_imports
     - avoid_relative_lib_imports
 
-    ### Deprecated
+    ### Removed
     # Avoid returning null for Future.
     # https://dart.dev/tools/linter-rules/avoid_returning_null_for_future
     #- avoid_returning_null_for_future
 
-    # Avoid slow async dart:io methods.
+    # Avoid slow asynchronous dart:io methods.
     # https://dart.dev/tools/linter-rules/avoid_slow_async_io
     - avoid_slow_async_io
 
@@ -66,7 +66,7 @@ linter:
     # https://dart.dev/tools/linter-rules/avoid_types_as_parameter_names
     - avoid_types_as_parameter_names
 
-    ### Currently not supported
+    ### Removed
     # Avoid overriding a final field to return different values if called multiple times.
     # https://dart.dev/tools/linter-rules/avoid_unstable_final_fields
     #- avoid_unstable_final_fields
@@ -103,7 +103,7 @@ linter:
     # https://dart.dev/tools/linter-rules/diagnostic_describe_all_properties
     #- diagnostic_describe_all_properties
 
-    # Don’t invoke asynchronous functions in non-async blocks.
+    # Don't invoke asynchronous functions in non-async blocks.
     # https://dart.dev/tools/linter-rules/discarded_futures
     #- discarded_futures
 
@@ -116,7 +116,7 @@ linter:
     - hash_and_equals
 
     ### Experimental
-    # Don’t implicitly reopen classes.
+    # Don't implicitly reopen classes.
     # https://dart.dev/tools/linter-rules/implicit_reopen
     - implicit_reopen
 
@@ -125,17 +125,22 @@ linter:
     # https://dart.dev/tools/linter-rules/invalid_case_patterns
     - invalid_case_patterns
 
+    ### Currently not supported
+    # Avoid runtime type tests with JS interop types where the result may not be platform-consistent.
+    # https://dart.dev/tools/linter-rules/invalid_runtime_check_with_js_interop_types
+    #- invalid_runtime_check_with_js_interop_types
+
     ### Removed
     # Conditions should not unconditionally evaluate to true or to false.
     # https://dart.dev/tools/linter-rules/invariant_booleans
     #- invariant_booleans
 
-    ### Deprecated
+    ### Removed
     # Invocation of Iterable.contains with references of unrelated types.
     # https://dart.dev/tools/linter-rules/iterable_contains_unrelated_type
     #- iterable_contains_unrelated_type
 
-    ### Deprecated
+    ### Removed
     # Invocation of remove with references of unrelated types.
     # https://dart.dev/tools/linter-rules/list_remove_unrelated_type
     #- list_remove_unrelated_type
@@ -144,23 +149,27 @@ linter:
     # https://dart.dev/tools/linter-rules/literal_only_boolean_expressions
     - literal_only_boolean_expressions
 
-    # Don’t use adjacent strings in list.
+    # A code block is missing a specified language.
+    # https://dart.dev/tools/linter-rules/missing_code_block_language_in_doc_comment
+    #- missing_code_block_language_in_doc_comment
+
+    # Don't use adjacent strings in list.
     # https://dart.dev/tools/linter-rules/no_adjacent_strings_in_list
     - no_adjacent_strings_in_list
 
-    # Don’t use more than one case with same value.
+    # Don't use more than one case with same value.
     # https://dart.dev/tools/linter-rules/no_duplicate_case_values
     - no_duplicate_case_values
 
-    # Don’t put any logic in createState.
+    # Don't put any logic in createState.
     # https://dart.dev/tools/linter-rules/no_logic_in_create_state
     - no_logic_in_create_state
 
-    # Don’t assign a variable to itself.
+    # Don't assign a variable to itself.
     # https://dart.dev/tools/linter-rules/no_self_assignments
     - no_self_assignments
 
-    # Don’t use wildcard parameters or variables.
+    # Don't use wildcard parameters or variables.
     # https://dart.dev/tools/linter-rules/no_wildcard_variable_uses
     - no_wildcard_variable_uses
 
@@ -168,17 +177,22 @@ linter:
     # https://dart.dev/tools/linter-rules/prefer_relative_imports
     #- prefer_relative_imports
 
-    # Don’t use the Null type, unless you are positive that you don’t want void.
+    # Don't use the Null type, unless you are positive that you don't want void.
     # https://dart.dev/tools/linter-rules/prefer_void_to_null
     - prefer_void_to_null
 
-    # Test type arguments in operator ==(Object other).
+    # Test type of argument in operator ==(Object other).
     # https://dart.dev/tools/linter-rules/test_types_in_equals
     - test_types_in_equals
 
     # Avoid throw in finally block.
     # https://dart.dev/tools/linter-rules/throw_in_finally
     - throw_in_finally
+
+    ### Currently not supported
+    # Use of angle brackets in a doc comment is treated as HTML by Markdown.
+    # https://dart.dev/tools/linter-rules/unintended_html_in_doc_comment
+    #- unintended_html_in_doc_comment
 
     # Avoid using unnecessary statements.
     # https://dart.dev/tools/linter-rules/unnecessary_statements
@@ -192,7 +206,7 @@ linter:
     # https://dart.dev/tools/linter-rules/unsafe_html
     - unsafe_html
 
-    # Do not use BuildContexts across async gaps.
+    # Do not use BuildContext across asynchronous gaps.
     # https://dart.dev/tools/linter-rules/use_build_context_synchronously
     - use_build_context_synchronously
 
@@ -216,7 +230,7 @@ linter:
     # https://dart.dev/tools/linter-rules/always_put_required_named_parameters_first
     #- always_put_required_named_parameters_first
 
-    ### Deprecated
+    ### Removed
     # Specify @required on named parameters without defaults.
     # https://dart.dev/tools/linter-rules/always_require_non_null_named_parameters
     #- always_require_non_null_named_parameters
@@ -251,7 +265,7 @@ linter:
     # https://dart.dev/tools/linter-rules/avoid_catches_without_on_clauses
     - avoid_catches_without_on_clauses
 
-    # Don’t explicitly catch Error or types that implement it.
+    # Don't explicitly catch Error or types that implement it.
     # https://dart.dev/tools/linter-rules/avoid_catching_errors
     - avoid_catching_errors
 
@@ -283,11 +297,11 @@ linter:
     # https://dart.dev/tools/linter-rules/avoid_function_literals_in_foreach_calls
     - avoid_function_literals_in_foreach_calls
 
-    # Don’t implement classes that override ==.
+    # Don't implement classes that override ==.
     # https://dart.dev/tools/linter-rules/avoid_implementing_value_types
     - avoid_implementing_value_types
 
-    # Don’t explicitly initialize variables to null.
+    # Don't explicitly initialize variables to null.
     # https://dart.dev/tools/linter-rules/avoid_init_to_null
     - avoid_init_to_null
 
@@ -295,11 +309,11 @@ linter:
     # https://dart.dev/tools/linter-rules/avoid_js_rounded_ints
     - avoid_js_rounded_ints
 
-    # Don’t declare multiple variables on a single line.
+    # Don't declare multiple variables on a single line.
     # https://dart.dev/tools/linter-rules/avoid_multiple_declarations_per_line
     - avoid_multiple_declarations_per_line
 
-    # Don’t check for null in custom == operators.
+    # Don't check for null in custom == operators.
     # https://dart.dev/tools/linter-rules/avoid_null_checks_in_equality_operators
     - avoid_null_checks_in_equality_operators
 
@@ -315,7 +329,7 @@ linter:
     # https://dart.dev/tools/linter-rules/avoid_redundant_argument_values
     - avoid_redundant_argument_values
 
-    # Don’t rename parameters of overridden methods.
+    # Don't rename parameters of overridden methods.
     # https://dart.dev/tools/linter-rules/avoid_renaming_method_parameters
     - avoid_renaming_method_parameters
 
@@ -323,7 +337,7 @@ linter:
     # https://dart.dev/tools/linter-rules/avoid_return_types_on_setters
     - avoid_return_types_on_setters
 
-    ### Deprecated
+    ### Removed
     # Avoid returning null from members whose return type is bool, double, int, or num.
     # https://dart.dev/tools/linter-rules/avoid_returning_null
     #- avoid_returning_null
@@ -380,7 +394,7 @@ linter:
     # https://dart.dev/tools/linter-rules/cascade_invocations
     - cascade_invocations
 
-    # Don’t cast a nullable value to a non nullable type.
+    # Don't cast a nullable value to a non nullable type.
     # https://dart.dev/tools/linter-rules/cast_nullable_to_non_nullable
     - cast_nullable_to_non_nullable
 
@@ -416,6 +430,11 @@ linter:
     # https://dart.dev/tools/linter-rules/do_not_use_environment
     #- do_not_use_environment
 
+    ### Currently not supported
+    # Document ignore comments.
+    # https://dart.dev/tools/linter-rules/document_ignores
+    #- document_ignores
+
     # Avoid empty catch blocks.
     # https://dart.dev/tools/linter-rules/empty_catches
     - empty_catches
@@ -445,7 +464,7 @@ linter:
     # https://dart.dev/tools/linter-rules/flutter_style_todos
     - flutter_style_todos
 
-    # Don’t import implementation files from another package.
+    # Don't import implementation files from another package.
     # https://dart.dev/tools/linter-rules/implementation_imports
     - implementation_imports
 
@@ -502,7 +521,7 @@ linter:
     # https://dart.dev/tools/linter-rules/no_leading_underscores_for_local_identifiers
     - no_leading_underscores_for_local_identifiers
 
-    # Don’t compare booleans to boolean literals.
+    # Don't compare booleans to boolean literals.
     # https://dart.dev/tools/linter-rules/no_literal_bool_comparisons
     - no_literal_bool_comparisons
 
@@ -518,7 +537,7 @@ linter:
     # https://dart.dev/tools/linter-rules/noop_primitive_operations
     - noop_primitive_operations
 
-    # Don’t use null check on a potentially nullable type parameter.
+    # Don't use null check on a potentially nullable type parameter.
     # https://dart.dev/tools/linter-rules/null_check_on_nullable_type_parameter
     - null_check_on_nullable_type_parameter
 
@@ -538,7 +557,7 @@ linter:
     # https://dart.dev/tools/linter-rules/only_throw_errors
     - only_throw_errors
 
-    # Don’t override fields.
+    # Don't override fields.
     # https://dart.dev/tools/linter-rules/overridden_fields
     - overridden_fields
 
@@ -550,7 +569,7 @@ linter:
     # https://dart.dev/tools/linter-rules/package_prefixed_library_names
     - package_prefixed_library_names
 
-    # Don’t reassign references to parameters of functions or methods.
+    # Don't reassign references to parameters of functions or methods.
     # https://dart.dev/tools/linter-rules/parameter_assignments
     - parameter_assignments
 
@@ -603,7 +622,7 @@ linter:
     # https://dart.dev/tools/linter-rules/prefer_contains
     - prefer_contains
 
-    # Prefer double quotes where they won’t require escape sequences.
+    # Prefer double quotes where they won't require escape sequences.
     # https://dart.dev/tools/linter-rules/prefer_double_quotes
     #- prefer_double_quotes
 
@@ -632,7 +651,7 @@ linter:
     # https://dart.dev/tools/linter-rules/prefer_final_parameters
     - prefer_final_parameters
 
-    # Prefer ‘for’ elements when building maps from iterables.
+    # Prefer 'for' elements when building maps from iterables.
     # https://dart.dev/tools/linter-rules/prefer_for_elements_to_map_fromIterable
     - prefer_for_elements_to_map_fromIterable
 
@@ -652,7 +671,7 @@ linter:
     # https://dart.dev/tools/linter-rules/prefer_if_elements_to_conditional_expressions
     - prefer_if_elements_to_conditional_expressions
 
-    # Prefer using if null operators.
+    # Prefer using ?? operators.
     # https://dart.dev/tools/linter-rules/prefer_if_null_operators
     - prefer_if_null_operators
 
@@ -692,11 +711,11 @@ linter:
     # https://dart.dev/tools/linter-rules/prefer_mixin
     - prefer_mixin
 
-    # Prefer null aware method calls.
+    # Prefer null-aware method calls.
     # https://dart.dev/tools/linter-rules/prefer_null_aware_method_calls
     - prefer_null_aware_method_calls
 
-    # Prefer using null aware operators.
+    # Prefer using null-aware operators.
     # https://dart.dev/tools/linter-rules/prefer_null_aware_operators
     - prefer_null_aware_operators
 
@@ -712,7 +731,7 @@ linter:
     # https://dart.dev/tools/linter-rules/prefer_typing_uninitialized_variables
     - prefer_typing_uninitialized_variables
 
-    # Provide a deprecation message, via @Deprecated(“message”).
+    # Provide a deprecation message, via @Deprecated("message").
     # https://dart.dev/tools/linter-rules/provide_deprecation_message
     - provide_deprecation_message
 
@@ -724,7 +743,7 @@ linter:
     # https://dart.dev/tools/linter-rules/recursive_getters
     - recursive_getters
 
-    # Use trailing commas for all function calls and declarations.
+    # Use trailing commas for all parameter lists and argument lists.
     # https://dart.dev/tools/linter-rules/require_trailing_commas
     - require_trailing_commas
 
@@ -765,11 +784,11 @@ linter:
     # https://dart.dev/tools/linter-rules/type_annotate_public_apis
     - type_annotate_public_apis
 
-    # Don’t type annotate initializing formals.
+    # Don't type annotate initializing formals.
     # https://dart.dev/tools/linter-rules/type_init_formals
     - type_init_formals
 
-    # Don’t use constant patterns with type literals.
+    # Don't use constant patterns with type literals.
     # https://dart.dev/tools/linter-rules/type_literal_in_constant_pattern
     - type_literal_in_constant_pattern
 
@@ -785,7 +804,7 @@ linter:
     # https://dart.dev/tools/linter-rules/unnecessary_brace_in_string_interps
     - unnecessary_brace_in_string_interps
 
-    # Don’t use explicit breaks when a break is implied.
+    # Don't use explicit breaks when a break is implied.
     # https://dart.dev/tools/linter-rules/unnecessary_breaks
     - unnecessary_breaks
 
@@ -797,25 +816,29 @@ linter:
     # https://dart.dev/tools/linter-rules/unnecessary_constructor_name
     - unnecessary_constructor_name
 
-    # Don’t use final for local variables.
+    # Don't use final for local variables.
     # https://dart.dev/tools/linter-rules/unnecessary_final
     #- unnecessary_final
 
-    # Avoid wrapping fields in getters and setters just to be “safe”.
+    # Avoid wrapping fields in getters and setters just to be "safe".
     # https://dart.dev/tools/linter-rules/unnecessary_getters_setters
     - unnecessary_getters_setters
 
-    # Don’t create a lambda when a tear-off will do.
+    # Don't create a lambda when a tear-off will do.
     # https://dart.dev/tools/linter-rules/unnecessary_lambdas
     - unnecessary_lambdas
 
-    # Don’t specify the late modifier when it is not needed.
+    # Don't specify the late modifier when it is not needed.
     # https://dart.dev/tools/linter-rules/unnecessary_late
     - unnecessary_late
 
     # Avoid library directives unless they have documentation comments or annotations.
     # https://dart.dev/tools/linter-rules/unnecessary_library_directive
     - unnecessary_library_directive
+
+    # Don't have a library name in a library declaration.
+    # https://dart.dev/tools/linter-rules/unnecessary_library_name
+    - unnecessary_library_name
 
     # Unnecessary new keyword.
     # https://dart.dev/tools/linter-rules/unnecessary_new
@@ -834,7 +857,7 @@ linter:
     # https://dart.dev/tools/linter-rules/unnecessary_null_checks
     - unnecessary_null_checks
 
-    # Avoid using null in if null operators.
+    # Avoid using null in ?? operators.
     # https://dart.dev/tools/linter-rules/unnecessary_null_in_if_null_operators
     - unnecessary_null_in_if_null_operators
 
@@ -842,7 +865,7 @@ linter:
     # https://dart.dev/tools/linter-rules/unnecessary_nullable_for_final_variable_declarations
     - unnecessary_nullable_for_final_variable_declarations
 
-    # Don’t override a method to do a super method invocation with the same parameters.
+    # Don't override a method to do a super method invocation with the same parameters.
     # https://dart.dev/tools/linter-rules/unnecessary_overrides
     - unnecessary_overrides
 
@@ -862,7 +885,7 @@ linter:
     # https://dart.dev/tools/linter-rules/unnecessary_string_interpolations
     - unnecessary_string_interpolations
 
-    # Don’t access members with this unless avoiding shadowing.
+    # Don't access members with this unless avoiding shadowing.
     # https://dart.dev/tools/linter-rules/unnecessary_this
     - unnecessary_this
 
@@ -894,7 +917,7 @@ linter:
     # https://dart.dev/tools/linter-rules/use_function_type_syntax_for_parameters
     - use_function_type_syntax_for_parameters
 
-    # Use if-null operators to convert nulls to bools.
+    # Use ?? operators to convert nulls to bools.
     # https://dart.dev/tools/linter-rules/use_if_null_to_convert_nulls_to_bools
     - use_if_null_to_convert_nulls_to_bools
 
@@ -944,7 +967,7 @@ linter:
     # https://dart.dev/tools/linter-rules/use_to_and_as_if_applicable
     #- use_to_and_as_if_applicable
 
-    # Don’t assign to void.
+    # Don't assign to void.
     # https://dart.dev/tools/linter-rules/void_checks
     - void_checks
 
@@ -964,6 +987,6 @@ linter:
     # https://dart.dev/tools/linter-rules/sort_pub_dependencies
     #- sort_pub_dependencies
 
-    ### Disabled rules: 35
-    ### Enabled rules: 194 (84.7% of total)
-    ### Total rules: 229
+    ### Disabled rules: 39
+    ### Enabled rules: 195 (83.3% of total)
+    ### Total rules: 234

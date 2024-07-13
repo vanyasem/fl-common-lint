@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.3.0
+
+- Enabled [unnecessary_library_name](https://dart.dev/tools/linter-rules/unnecessary_library_name):
+  _Don't have a library name in a `library` declaration._
+
+Linter rules up to date as of **13.07.2024**
+
+Dart SDK: **3.4.0**
+
 ## 1.2.0
 
 - Enabled [annotate_redeclares](https://dart.dev/tools/linter-rules/annotate_redeclares):
