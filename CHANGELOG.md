@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.4.0
+
+- Enabled [invalid_runtime_check_with_js_interop_types](https://dart.dev/tools/linter-rules/invalid_runtime_check_with_js_interop_types):
+  _Avoid runtime type tests with JS interop types where the result may not be platform-consistent._
+
+- Enabled [unintended_html_in_doc_comment](https://dart.dev/tools/linter-rules/unintended_html_in_doc_comment):
+  _Use of angle brackets in a doc comment is treated as HTML by Markdown._
+
+- Enabled [document_ignores](https://dart.dev/tools/linter-rules/document_ignores):
+  _Document ignore comments._
+
+Linter rules up to date as of **08.08.2024**
+
+Dart SDK: **3.5.0**
+
 ## 1.3.0
 
 - Enabled [unnecessary_library_name](https://dart.dev/tools/linter-rules/unnecessary_library_name):
