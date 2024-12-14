@@ -120,6 +120,11 @@ linter:
     # https://dart.dev/tools/linter-rules/avoid_function_literals_in_foreach_calls
     - avoid_function_literals_in_foreach_calls
 
+    ### Experimental
+    # Avoid using 'FutureOr' as the type of a result.
+    # https://dart.dev/tools/linter-rules/avoid_futureor_void
+    - avoid_futureor_void
+
     # Don't implement classes that override ==.
     # https://dart.dev/tools/linter-rules/avoid_implementing_value_types
     - avoid_implementing_value_types
@@ -466,7 +471,7 @@ linter:
     # https://dart.dev/tools/linter-rules/no_leading_underscores_for_local_identifiers
     - no_leading_underscores_for_local_identifiers
 
-    # Don't compare Boolean expressions to Boolean literals.
+    # Don't compare boolean expressions to boolean literals.
     # https://dart.dev/tools/linter-rules/no_literal_bool_comparisons
     - no_literal_bool_comparisons
 
@@ -506,10 +511,15 @@ linter:
     # https://dart.dev/tools/linter-rules/omit_local_variable_types
     #- omit_local_variable_types
 
-    ### Currently not supported
+    ### Experimental
     # Omit obvious type annotations for local variables.
     # https://dart.dev/tools/linter-rules/omit_obvious_local_variable_types
     #- omit_obvious_local_variable_types
+
+    ### Currently not supported
+    # Omit obvious type annotations for top-level and static variables.
+    # https://dart.dev/tools/linter-rules/omit_obvious_property_types
+    #- omit_obvious_property_types
 
     # Avoid defining a one-member abstract class when a simple function will do.
     # https://dart.dev/tools/linter-rules/one_member_abstracts
@@ -523,6 +533,7 @@ linter:
     # https://dart.dev/tools/linter-rules/overridden_fields
     - overridden_fields
 
+    ### Deprecated
     # Provide doc comments for all public APIs.
     # https://dart.dev/tools/linter-rules/package_api_docs
     #- package_api_docs
@@ -753,6 +764,16 @@ linter:
     # https://dart.dev/tools/linter-rules/sort_unnamed_constructors_first
     - sort_unnamed_constructors_first
 
+    ### Experimental
+    # Specify non-obvious type annotations for local variables.
+    # https://dart.dev/tools/linter-rules/specify_nonobvious_local_variable_types
+    - specify_nonobvious_local_variable_types
+
+    ### Currently not supported
+    # Specify non-obvious type annotations for top-level and static variables.
+    # https://dart.dev/tools/linter-rules/specify_nonobvious_property_types
+    #- specify_nonobvious_property_types
+
     ### Removed
     # Place the super call last in a constructor initialization list.
     # https://dart.dev/tools/linter-rules/super_goes_last
@@ -899,9 +920,15 @@ linter:
     # https://dart.dev/tools/linter-rules/unrelated_type_equality_checks
     - unrelated_type_equality_checks
 
+    ### Removed
     # Avoid unsafe HTML APIs.
     # https://dart.dev/tools/linter-rules/unsafe_html
-    - unsafe_html
+    #- unsafe_html
+
+    ### Currently not supported
+    # Unsafe type: Has a type variable in a non-covariant position.
+    # https://dart.dev/tools/linter-rules/unsafe_variance
+    #- unsafe_variance
 
     # Do not use BuildContext across asynchronous gaps.
     # https://dart.dev/tools/linter-rules/use_build_context_synchronously
@@ -981,10 +1008,9 @@ linter:
     # https://dart.dev/tools/linter-rules/use_to_and_as_if_applicable
     #- use_to_and_as_if_applicable
 
-    ### Currently not supported
     # Use truncating division.
     # https://dart.dev/tools/linter-rules/use_truncating_division
-    #- use_truncating_division
+    - use_truncating_division
 
     # Use valid regular expression syntax.
     # https://dart.dev/tools/linter-rules/valid_regexps
@@ -994,6 +1020,6 @@ linter:
     # https://dart.dev/tools/linter-rules/void_checks
     - void_checks
 
-    ### Disabled rules: 38
-    ### Enabled rules: 198 (83.9% of total)
-    ### Total rules: 236
+    ### Disabled rules: 41
+    ### Enabled rules: 200 (83.0% of total)
+    ### Total rules: 241

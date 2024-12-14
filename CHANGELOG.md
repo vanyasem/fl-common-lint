@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.5.0
+
+- Disabled [unsafe_html](https://dart.dev/tools/linter-rules/unsafe_html):
+  _Avoid unsafe HTML APIs._
+
+- Enabled [avoid_futureor_void](https://dart.dev/tools/linter-rules/avoid_futureor_void):
+  _Avoid using 'FutureOr' as the type of a result._
+
+- Enabled [specify_nonobvious_local_variable_types](https://dart.dev/tools/linter-rules/specify_nonobvious_local_variable_types):
+  _Specify non-obvious type annotations for local variables._
+
+- Enabled [use_truncating_division](https://dart.dev/tools/linter-rules/use_truncating_division):
+  _Use truncating division._
+
+Linter rules up to date as of **14.12.2024**
+
+Dart SDK: **3.6.0**
+
 ## 1.4.0
 
 - Enabled [invalid_runtime_check_with_js_interop_types](https://dart.dev/tools/linter-rules/invalid_runtime_check_with_js_interop_types):
