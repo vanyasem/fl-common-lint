@@ -397,7 +397,7 @@ linter:
     #- invariant_booleans
 
     ### Removed
-    # Invocation of Iterable.contains with references of unrelated types.
+    # Invocation of Iterable<E>.contains with references of unrelated types.
     # https://dart.dev/tools/linter-rules/iterable_contains_unrelated_type
     #- iterable_contains_unrelated_type
 
@@ -516,7 +516,7 @@ linter:
     # https://dart.dev/tools/linter-rules/omit_obvious_local_variable_types
     #- omit_obvious_local_variable_types
 
-    ### Currently not supported
+    ### Experimental
     # Omit obvious type annotations for top-level and static variables.
     # https://dart.dev/tools/linter-rules/omit_obvious_property_types
     #- omit_obvious_property_types
@@ -533,7 +533,7 @@ linter:
     # https://dart.dev/tools/linter-rules/overridden_fields
     - overridden_fields
 
-    ### Deprecated
+    ### Removed
     # Provide doc comments for all public APIs.
     # https://dart.dev/tools/linter-rules/package_api_docs
     #- package_api_docs
@@ -730,7 +730,7 @@ linter:
 
     # Use trailing commas for all parameter lists and argument lists.
     # https://dart.dev/tools/linter-rules/require_trailing_commas
-    - require_trailing_commas
+    #- require_trailing_commas
 
     # Use secure urls in pubspec.yaml.
     # https://dart.dev/tools/linter-rules/secure_pubspec_urls
@@ -769,10 +769,14 @@ linter:
     # https://dart.dev/tools/linter-rules/specify_nonobvious_local_variable_types
     - specify_nonobvious_local_variable_types
 
-    ### Currently not supported
+    ### Experimental
     # Specify non-obvious type annotations for top-level and static variables.
     # https://dart.dev/tools/linter-rules/specify_nonobvious_property_types
-    #- specify_nonobvious_property_types
+    - specify_nonobvious_property_types
+
+    # Specify type annotations.
+    # https://dart.dev/tools/linter-rules/strict_top_level_inference
+    - strict_top_level_inference
 
     ### Removed
     # Place the super call last in a constructor initialization list.
@@ -811,6 +815,11 @@ linter:
     # https://dart.dev/tools/linter-rules/unintended_html_in_doc_comment
     - unintended_html_in_doc_comment
 
+    ### Experimental
+    # No await no async.
+    # https://dart.dev/tools/linter-rules/unnecessary_async
+    - unnecessary_async
+
     # Unnecessary await keyword in return.
     # https://dart.dev/tools/linter-rules/unnecessary_await_in_return
     - unnecessary_await_in_return
@@ -838,6 +847,12 @@ linter:
     # Avoid wrapping fields in getters and setters just to be "safe".
     # https://dart.dev/tools/linter-rules/unnecessary_getters_setters
     - unnecessary_getters_setters
+
+    ### Currently not supported
+    ### Experimental
+    # Don't ignore a diagnostic code that is not produced.
+    # https://dart.dev/tools/linter-rules/unnecessary_ignore
+    #- unnecessary_ignore
 
     # Don't create a lambda when a tear-off will do.
     # https://dart.dev/tools/linter-rules/unnecessary_lambdas
@@ -912,6 +927,10 @@ linter:
     # https://dart.dev/tools/linter-rules/unnecessary_to_list_in_spreads
     - unnecessary_to_list_in_spreads
 
+    # Unnecessary underscores can be removed.
+    # https://dart.dev/tools/linter-rules/unnecessary_underscores
+    - unnecessary_underscores
+
     # Unreachable top-level members in executable libraries.
     # https://dart.dev/tools/linter-rules/unreachable_from_main
     #- unreachable_from_main
@@ -925,10 +944,10 @@ linter:
     # https://dart.dev/tools/linter-rules/unsafe_html
     #- unsafe_html
 
-    ### Currently not supported
+    ### Experimental
     # Unsafe type: Has a type variable in a non-covariant position.
     # https://dart.dev/tools/linter-rules/unsafe_variance
-    #- unsafe_variance
+    - unsafe_variance
 
     # Do not use BuildContext across asynchronous gaps.
     # https://dart.dev/tools/linter-rules/use_build_context_synchronously
@@ -1021,5 +1040,5 @@ linter:
     - void_checks
 
     ### Disabled rules: 41
-    ### Enabled rules: 200 (83.0% of total)
-    ### Total rules: 241
+    ### Enabled rules: 204 (83.3% of total)
+    ### Total rules: 245

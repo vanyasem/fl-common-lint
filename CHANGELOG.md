@@ -1,5 +1,29 @@
 # Changelog
 
+## 1.6.0
+
+- Enabled [specify_nonobvious_property_types](https://dart.dev/tools/linter-rules/specify_nonobvious_property_types):
+  _Specify non-obvious type annotations for top-level and static variables._
+
+- Enabled [strict_top_level_inference](https://dart.dev/tools/linter-rules/strict_top_level_inference):
+  _Specify type annotations._
+
+- Enabled [unnecessary_async](https://dart.dev/tools/linter-rules/unnecessary_async):
+  _No await no async._
+
+- Enabled [unnecessary_underscores](https://dart.dev/tools/linter-rules/unnecessary_underscores):
+  _Unnecessary underscores can be removed._
+
+- Enabled [unsafe_variance](https://dart.dev/tools/linter-rules/unsafe_variance):
+  _Unsafe type: Has a type variable in a non-covariant position._
+
+- Disabled [require_trailing_commas](https://dart.dev/tools/linter-rules/require_trailing_commas):
+  _Use trailing commas for all parameter lists and argument lists._
+
+Linter rules up to date as of **09.03.2025**
+
+Dart SDK: **3.7.0**
+
 ## 1.5.0
 
 - Disabled [unsafe_html](https://dart.dev/tools/linter-rules/unsafe_html):
