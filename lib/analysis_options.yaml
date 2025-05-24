@@ -320,7 +320,7 @@ linter:
     # https://dart.dev/tools/linter-rules/directives_ordering
     - directives_ordering
 
-    # Don't invoke asynchronous functions in non-async blocks.
+    # There should be no Future-returning calls in synchronous functions unless they are assigned or returned.
     # https://dart.dev/tools/linter-rules/discarded_futures
     #- discarded_futures
 
@@ -783,6 +783,11 @@ linter:
     # https://dart.dev/tools/linter-rules/super_goes_last
     #- super_goes_last
 
+    ### Currently not supported
+    # Avoid switch statements on a 'Type'.
+    # https://dart.dev/tools/linter-rules/switch_on_type
+    #- switch_on_type
+
     # Test type of argument in operator ==(Object other).
     # https://dart.dev/tools/linter-rules/test_types_in_equals
     - test_types_in_equals
@@ -848,11 +853,9 @@ linter:
     # https://dart.dev/tools/linter-rules/unnecessary_getters_setters
     - unnecessary_getters_setters
 
-    ### Currently not supported
-    ### Experimental
     # Don't ignore a diagnostic code that is not produced.
     # https://dart.dev/tools/linter-rules/unnecessary_ignore
-    #- unnecessary_ignore
+    - unnecessary_ignore
 
     # Don't create a lambda when a tear-off will do.
     # https://dart.dev/tools/linter-rules/unnecessary_lambdas
@@ -927,6 +930,11 @@ linter:
     # https://dart.dev/tools/linter-rules/unnecessary_to_list_in_spreads
     - unnecessary_to_list_in_spreads
 
+    ### Currently not supported
+    # Unnecessary use of 'unawaited'.
+    # https://dart.dev/tools/linter-rules/unnecessary_unawaited
+    #- unnecessary_unawaited
+
     # Unnecessary underscores can be removed.
     # https://dart.dev/tools/linter-rules/unnecessary_underscores
     - unnecessary_underscores
@@ -994,6 +1002,10 @@ linter:
     # https://dart.dev/tools/linter-rules/use_named_constants
     - use_named_constants
 
+    # If-elements testing for null can be replaced with null-aware elements.
+    # https://dart.dev/tools/linter-rules/use_null_aware_elements
+    - use_null_aware_elements
+
     # Use raw string to avoid escapes.
     # https://dart.dev/tools/linter-rules/use_raw_strings
     - use_raw_strings
@@ -1039,6 +1051,6 @@ linter:
     # https://dart.dev/tools/linter-rules/void_checks
     - void_checks
 
-    ### Disabled rules: 41
-    ### Enabled rules: 204 (83.3% of total)
-    ### Total rules: 245
+    ### Disabled rules: 42
+    ### Enabled rules: 206 (83.1% of total)
+    ### Total rules: 248

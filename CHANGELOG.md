@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.7.0
+
+- Enabled [unnecessary_ignore](https://dart.dev/tools/linter-rules/unnecessary_ignore):
+  _Don't ignore a diagnostic code that is not produced._
+
+- Enabled [use_null_aware_elements](https://dart.dev/tools/linter-rules/use_null_aware_elements):
+  _If-elements testing for null can be replaced with null-aware elements._
+
+Linter rules up to date as of **24.05.2025**
+
+Dart SDK: **3.8.0**
+
 ## 1.6.0
 
 - Enabled [specify_nonobvious_property_types](https://dart.dev/tools/linter-rules/specify_nonobvious_property_types):
