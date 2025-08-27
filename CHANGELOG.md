@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.8.0
+
+- Enabled [switch_on_type](https://dart.dev/tools/linter-rules/switch_on_type):
+  _Avoid switch statements on a 'Type'._
+
+- Enabled [unnecessary_unawaited](https://dart.dev/tools/linter-rules/unnecessary_unawaited):
+  _Unnecessary use of 'unawaited'._
+
+Linter rules up to date as of **27.08.2025**
+
+Dart SDK: **3.9.0**
+
 ## 1.7.0
 
 - Enabled [unnecessary_ignore](https://dart.dev/tools/linter-rules/unnecessary_ignore):

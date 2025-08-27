@@ -783,10 +783,9 @@ linter:
     # https://dart.dev/tools/linter-rules/super_goes_last
     #- super_goes_last
 
-    ### Currently not supported
     # Avoid switch statements on a 'Type'.
     # https://dart.dev/tools/linter-rules/switch_on_type
-    #- switch_on_type
+    - switch_on_type
 
     # Test type of argument in operator ==(Object other).
     # https://dart.dev/tools/linter-rules/test_types_in_equals
@@ -930,10 +929,9 @@ linter:
     # https://dart.dev/tools/linter-rules/unnecessary_to_list_in_spreads
     - unnecessary_to_list_in_spreads
 
-    ### Currently not supported
     # Unnecessary use of 'unawaited'.
     # https://dart.dev/tools/linter-rules/unnecessary_unawaited
-    #- unnecessary_unawaited
+    - unnecessary_unawaited
 
     # Unnecessary underscores can be removed.
     # https://dart.dev/tools/linter-rules/unnecessary_underscores
@@ -1051,6 +1049,6 @@ linter:
     # https://dart.dev/tools/linter-rules/void_checks
     - void_checks
 
-    ### Disabled rules: 42
-    ### Enabled rules: 206 (83.1% of total)
+    ### Disabled rules: 40
+    ### Enabled rules: 208 (83.9% of total)
     ### Total rules: 248
