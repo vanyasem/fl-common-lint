@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.9.0
+
+- Enabled [remove_deprecations_in_breaking_versions](https://dart.dev/tools/linter-rules/remove_deprecations_in_breaking_versions)
+  _Deprecation in major version._
+
+Linter rules up to date as of **25.11.2025**
+
+Dart SDK: **3.10.0**
+
 ## 1.8.0
 
 - Enabled [switch_on_type](https://dart.dev/tools/linter-rules/switch_on_type):
