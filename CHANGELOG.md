@@ -1,8 +1,26 @@
 # Changelog
 
+## 1.10.0
+
+- Enabled [simplify_variable_pattern](https://dart.dev/tools/linter-rules/simplify_variable_pattern):
+  _Avoid unnecessary member names in variable patterns._
+
+- Disabled [avoid_null_checks_in_equality_operators](https://dart.dev/tools/linter-rules/avoid_null_checks_in_equality_operators):
+  _Don't check for `null` in custom `==` operators._
+
+- Disabled [prefer_final_parameters](https://dart.dev/tools/linter-rules/prefer_final_parameters):
+  _Prefer final for parameter declarations if they are not reassigned._
+
+- Disabled [use_if_null_to_convert_nulls_to_bools](https://dart.dev/tools/linter-rules/use_if_null_to_convert_nulls_to_bools):
+  _Use `??` operators to convert `null`s to `bool`s._
+
+Linter rules up to date as of **28.02.2026**
+
+Dart SDK: **3.11.0**
+
 ## 1.9.0
 
-- Enabled [remove_deprecations_in_breaking_versions](https://dart.dev/tools/linter-rules/remove_deprecations_in_breaking_versions)
+- Enabled [remove_deprecations_in_breaking_versions](https://dart.dev/tools/linter-rules/remove_deprecations_in_breaking_versions):
   _Deprecation in major version._
 
 Linter rules up to date as of **25.11.2025**

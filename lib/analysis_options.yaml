@@ -141,9 +141,10 @@ linter:
     # https://dart.dev/tools/linter-rules/avoid_multiple_declarations_per_line
     - avoid_multiple_declarations_per_line
 
+    ### Deprecated
     # Don't check for null in custom == operators.
     # https://dart.dev/tools/linter-rules/avoid_null_checks_in_equality_operators
-    - avoid_null_checks_in_equality_operators
+    #- avoid_null_checks_in_equality_operators
 
     # Avoid positional boolean parameters.
     # https://dart.dev/tools/linter-rules/avoid_positional_boolean_parameters
@@ -624,9 +625,10 @@ linter:
     # https://dart.dev/tools/linter-rules/prefer_final_locals
     - prefer_final_locals
 
+    ### Deprecated
     # Prefer final for parameter declarations if they are not reassigned.
     # https://dart.dev/tools/linter-rules/prefer_final_parameters
-    - prefer_final_parameters
+    #- prefer_final_parameters
 
     # Prefer for elements when building maps from iterables.
     # https://dart.dev/tools/linter-rules/prefer_for_elements_to_map_fromIterable
@@ -739,6 +741,10 @@ linter:
     # Use secure urls in pubspec.yaml.
     # https://dart.dev/tools/linter-rules/secure_pubspec_urls
     - secure_pubspec_urls
+
+    # Avoid unnecessary member names in variable patterns.
+    # https://dart.dev/tools/linter-rules/simplify_variable_pattern
+    - simplify_variable_pattern
 
     # SizedBox for whitespace.
     # https://dart.dev/tools/linter-rules/sized_box_for_whitespace
@@ -983,9 +989,10 @@ linter:
     # https://dart.dev/tools/linter-rules/use_function_type_syntax_for_parameters
     - use_function_type_syntax_for_parameters
 
+    ### Deprecated
     # Use ?? operators to convert nulls to bools.
     # https://dart.dev/tools/linter-rules/use_if_null_to_convert_nulls_to_bools
-    - use_if_null_to_convert_nulls_to_bools
+    #- use_if_null_to_convert_nulls_to_bools
 
     # Prefer intValue.isOdd/isEven instead of checking the result of % 2.
     # https://dart.dev/tools/linter-rules/use_is_even_rather_than_modulo
@@ -1053,6 +1060,6 @@ linter:
     # https://dart.dev/tools/linter-rules/void_checks
     - void_checks
 
-    ### Disabled rules: 40
-    ### Enabled rules: 209 (83.9% of total)
-    ### Total rules: 249
+    ### Disabled rules: 43
+    ### Enabled rules: 207 (82.8% of total)
+    ### Total rules: 250
