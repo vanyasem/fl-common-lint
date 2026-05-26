@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.11.1
+
+- Disabled [unnecessary_type_name_in_constructor](https://dart.dev/tools/linter-rules/unnecessary_type_name_in_constructor):
+_Don't use an explicit type name in a constructor._
+
+- Disabled [unnecessary_const_in_enum_constructor](https://dart.dev/tools/linter-rules/unnecessary_const_in_enum_constructor):
+_Don't use an explicit `const` in a generative enum constructor._
+
+Linter rules up to date as of **26.05.2026**
+
+Dart SDK: **3.12.0**
+
 ## 1.11.0
 
 - Enabled [var_with_no_type_annotation](https://dart.dev/tools/linter-rules/var_with_no_type_annotation):

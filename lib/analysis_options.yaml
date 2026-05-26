@@ -850,9 +850,10 @@ linter:
     # https://dart.dev/tools/linter-rules/unnecessary_const
     - unnecessary_const
 
+    ### Currently not supported
     # Don't use an explicit const in a generative enum constructor.
     # https://dart.dev/tools/linter-rules/unnecessary_const_in_enum_constructor
-    - unnecessary_const_in_enum_constructor
+    #- unnecessary_const_in_enum_constructor
 
     # Unnecessary .new constructor name.
     # https://dart.dev/tools/linter-rules/unnecessary_constructor_name
@@ -943,9 +944,10 @@ linter:
     # https://dart.dev/tools/linter-rules/unnecessary_to_list_in_spreads
     - unnecessary_to_list_in_spreads
 
+    ### Currently not supported
     # Don't use an explicit type name in a constructor.
     # https://dart.dev/tools/linter-rules/unnecessary_type_name_in_constructor
-    - unnecessary_type_name_in_constructor
+    #- unnecessary_type_name_in_constructor
 
     # Unnecessary use of 'unawaited'.
     # https://dart.dev/tools/linter-rules/unnecessary_unawaited
