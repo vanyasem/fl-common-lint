@@ -1074,6 +1074,6 @@ linter:
     # https://dart.dev/tools/linter-rules/void_checks
     - void_checks
 
-    ### Disabled rules: 43
-    ### Enabled rules: 211 (83.1% of total)
+    ### Disabled rules: 45
+    ### Enabled rules: 209 (82.3% of total)
     ### Total rules: 254
