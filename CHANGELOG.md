@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.11.0
+
+- Enabled [var_with_no_type_annotation](https://dart.dev/tools/linter-rules/var_with_no_type_annotation):
+_Avoid declaring parameters with `var` and no type annotation._
+
+- Enabled [unnecessary_type_name_in_constructor](https://dart.dev/tools/linter-rules/unnecessary_type_name_in_constructor):
+_Don't use an explicit type name in a constructor._
+
+- Enabled [unnecessary_const_in_enum_constructor](https://dart.dev/tools/linter-rules/unnecessary_const_in_enum_constructor):
+_Don't use an explicit `const` in a generative enum constructor._
+
+- Enabled [simple_directive_paths](https://dart.dev/tools/linter-rules/simple_directive_paths):
+_Use simple directive paths._
+
+Linter rules up to date as of **26.05.2026**
+
+Dart SDK: **3.12.0**
+
 ## 1.10.0
 
 - Enabled [simplify_variable_pattern](https://dart.dev/tools/linter-rules/simplify_variable_pattern):

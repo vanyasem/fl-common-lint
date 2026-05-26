@@ -512,12 +512,10 @@ linter:
     # https://dart.dev/tools/linter-rules/omit_local_variable_types
     #- omit_local_variable_types
 
-    ### Experimental
     # Omit obvious type annotations for local variables.
     # https://dart.dev/tools/linter-rules/omit_obvious_local_variable_types
     #- omit_obvious_local_variable_types
 
-    ### Experimental
     # Omit obvious type annotations for top-level and static variables.
     # https://dart.dev/tools/linter-rules/omit_obvious_property_types
     #- omit_obvious_property_types
@@ -742,6 +740,10 @@ linter:
     # https://dart.dev/tools/linter-rules/secure_pubspec_urls
     - secure_pubspec_urls
 
+    # Use simple directive paths.
+    # https://dart.dev/tools/linter-rules/simple_directive_paths
+    - simple_directive_paths
+
     # Avoid unnecessary member names in variable patterns.
     # https://dart.dev/tools/linter-rules/simplify_variable_pattern
     - simplify_variable_pattern
@@ -774,12 +776,10 @@ linter:
     # https://dart.dev/tools/linter-rules/sort_unnamed_constructors_first
     - sort_unnamed_constructors_first
 
-    ### Experimental
     # Specify non-obvious type annotations for local variables.
     # https://dart.dev/tools/linter-rules/specify_nonobvious_local_variable_types
     - specify_nonobvious_local_variable_types
 
-    ### Experimental
     # Specify non-obvious type annotations for top-level and static variables.
     # https://dart.dev/tools/linter-rules/specify_nonobvious_property_types
     - specify_nonobvious_property_types
@@ -849,6 +849,10 @@ linter:
     # Avoid const keyword.
     # https://dart.dev/tools/linter-rules/unnecessary_const
     - unnecessary_const
+
+    # Don't use an explicit const in a generative enum constructor.
+    # https://dart.dev/tools/linter-rules/unnecessary_const_in_enum_constructor
+    - unnecessary_const_in_enum_constructor
 
     # Unnecessary .new constructor name.
     # https://dart.dev/tools/linter-rules/unnecessary_constructor_name
@@ -938,6 +942,10 @@ linter:
     # Unnecessary toList() in spreads.
     # https://dart.dev/tools/linter-rules/unnecessary_to_list_in_spreads
     - unnecessary_to_list_in_spreads
+
+    # Don't use an explicit type name in a constructor.
+    # https://dart.dev/tools/linter-rules/unnecessary_type_name_in_constructor
+    - unnecessary_type_name_in_constructor
 
     # Unnecessary use of 'unawaited'.
     # https://dart.dev/tools/linter-rules/unnecessary_unawaited
@@ -1056,10 +1064,14 @@ linter:
     # https://dart.dev/tools/linter-rules/valid_regexps
     - valid_regexps
 
+    # Avoid declaring parameters with var and no type annotation.
+    # https://dart.dev/tools/linter-rules/var_with_no_type_annotation
+    - var_with_no_type_annotation
+
     # Don't assign to void.
     # https://dart.dev/tools/linter-rules/void_checks
     - void_checks
 
     ### Disabled rules: 43
-    ### Enabled rules: 207 (82.8% of total)
-    ### Total rules: 250
+    ### Enabled rules: 211 (83.1% of total)
+    ### Total rules: 254
