@@ -12,7 +12,7 @@ Focused on having as many non-conflicting rules enabled as possible.
 
    ```yaml
    dev_dependencies:
-     fl_common_lint: 1.11.1
+     fl_common_lint: 1.11.2
    ```
 
    or
@@ -22,7 +22,7 @@ Focused on having as many non-conflicting rules enabled as possible.
      fl_common_lint:
        git:
          url: git@github.com:vanyasem/fl-common-lint.git
-         ref: 1.11.1
+         ref: 1.11.2
    ```
 
 2. Create an `analysis_options.yaml` file at the root of the package (alongside

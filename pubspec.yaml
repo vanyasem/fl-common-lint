@@ -1,6 +1,6 @@
 name: fl_common_lint
 description: Common linter configuration for vanyasem's projects.
-version: 1.11.1
+version: 1.11.2
 homepage: https://github.com/vanyasem/fl-common-lint
 repository: https://github.com/vanyasem/fl-common-lint
 issue_tracker: https://github.com/vanyasem/fl-common-lint/issues

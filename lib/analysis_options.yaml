@@ -5,6 +5,13 @@ analyzer:
     - "**/*.gen.dart"
     - "**/*.gr.dart"
     - "**/*.g.dart"
+    - "build/**"
+    - "android/**"
+    - "ios/**"
+    - "web/**"
+    - "windows/**"
+    - "macos/**"
+    - "linux/**"
 
   language:
     strict-casts: true # Same as old implicit-casts: false

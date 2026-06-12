@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.11.2
+
+- Excluded `build` folder from analyzer
+- Excluded platform folders (`android`, `ios`, `web`, `windows`, `macos`, `linux`)
+  from analyzer
+
+Linter rules up to date as of **26.05.2026**
+
+Dart SDK: **3.12.0**
+
 ## 1.11.1
 
 - Disabled [unnecessary_type_name_in_constructor](https://dart.dev/tools/linter-rules/unnecessary_type_name_in_constructor):
