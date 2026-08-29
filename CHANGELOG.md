@@ -1,5 +1,47 @@
 # Changelog
 
+## 1.12.0
+
+- Disabled [avoid_private_typedef_functions](https://dart.dev/tools/linter-rules/avoid_private_typedef_functions):
+_Avoid private typedef functions._
+
+- Disabled [unnecessary_await_in_return](https://dart.dev/tools/linter-rules/unnecessary_await_in_return):
+_Unnecessary await keyword in return._
+
+- Enabled [async_return_with_no_await](https://dart.dev/tools/linter-rules/async_return_with_no_await):
+_Return with no await._
+
+- Enabled [empty_container_bodies](https://dart.dev/tools/linter-rules/empty_container_bodies):
+_Use ; instead of {} for empty container bodies._
+
+- Enabled [initialize_in_field_declaration](https://dart.dev/tools/linter-rules/initialize_in_field_declaration):
+_Initialize the field in the field's initializer._
+
+- Enabled [migrate_design_widgets](https://dart.dev/tools/linter-rules/migrate_design_widgets):
+_Design widgets should be imported from Material or Cupertino packages._
+
+- Enabled [no_dynamic_casts](https://dart.dev/tools/linter-rules/no_dynamic_casts):
+_Avoid implicit casts from dynamic._
+
+- Enabled [no_raw_types](https://dart.dev/tools/linter-rules/no_raw_types):
+_Avoid raw types._
+
+- Enabled [unnecessary_const_in_enum_constructor](https://dart.dev/tools/linter-rules/unnecessary_const_in_enum_constructor):
+_Don't use an explicit const in a generative enum constructor._
+
+- Enabled [unnecessary_primary_constructor_body](https://dart.dev/tools/linter-rules/unnecessary_primary_constructor_body):
+_Unnecessary primary constructor bodies can be removed._
+
+- Enabled [unnecessary_type_name_in_constructor](https://dart.dev/tools/linter-rules/unnecessary_type_name_in_constructor):
+_Don't use an explicit type name in a constructor._
+
+- Enabled [use_declaring_parameters](https://dart.dev/tools/linter-rules/use_declaring_parameters):
+_Use a declaring parameter._
+
+Linter rules up to date as of **29.08.2026**
+
+Dart SDK: **3.13.0**
+
 ## 1.11.2
 
 - Excluded `build` folder from analyzer
